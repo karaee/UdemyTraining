@@ -23,6 +23,7 @@ public class CubeDestroyer : MonoBehaviour
             RaycastHit hitObject;
             if (Physics.Raycast(mainCamera.ScreenPointToRay(touch.position), out hitObject))
             {
+                
                 if (hitObject.collider.gameObject.tag == "Cubes")
                 {
                     if (hitObject.collider.gameObject.GetComponent<MeshRenderer>().enabled)
